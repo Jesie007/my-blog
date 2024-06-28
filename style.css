@@ -10,6 +10,10 @@ h1 {
   font-size: 36px;
   font-weight: 400;
 }
+.container {
+  display: flex;
+  gap: 3rem;
+}
 
 header p {
   font-size: 15px;
@@ -25,9 +29,9 @@ header p span {
 #blog-entry {
   display: grid;
   grid-template-rows: 3fr;
-  width: 60%;
   padding-top: 20px;
   padding-left: 40px;
+  flex: 0 0 60%;
 }
 
 .heading-card {
@@ -98,10 +102,7 @@ button:hover {
 }
 
 .author-card {
-  position: relative;
-  width: 30%;
-  top: -1100px;
-  right: -850px;
+  flex: 0 0 25%;
 }
 .author-card h2 {
   font-family: "Raleway", sans-serif;
@@ -122,10 +123,7 @@ button:hover {
 }
 
 .post-card {
-  position: relative;
-  width: 30%;
-  top: -1100px;
-  right: -850px;
+  flex: 0 0 25%;
 }
 .posts {
   display: grid;
@@ -171,8 +169,8 @@ button:hover {
 #tag {
   position: relative;
   width: 30%;
-  top: -700px;
-  right: -850px;
+  top: -15%;
+  right: -66%;
   display: grid;
   grid-template-rows: 1fr 2fr;
 }
